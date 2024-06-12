@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "{{cookiecutter.app_name}}"
+version = "0.0.1"
+description = ""
+authors = ["Ritik Tayal"]
+readme = "README.md"
+homepage = "https://github.com/shawn-she/{{cookiecutter.repo_name}}"
+repository = "https://github.com/shawn-she/{{cookiecutter.repo_name}}"
+exclude = ["tests"]
+include = ["LICENSE"]
+license = ""
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+packages = [
+    { include = "{{cookiecutter.app_name}}"}
+]
+
+[tool.poetry.scripts]
+{{cookiecutter.app_name}} = '{{cookiecutter.app_name}}.__main__:main'
+
+[tool.poetry.dependencies]
+python = "^{{cookiecutter.python_version}}"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-asyncio = "*"
+flake8 = "*"
+black = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
