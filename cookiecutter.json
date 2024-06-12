@@ -4,5 +4,6 @@
   "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
   "author": "shawn-she",
-  "python_version": "3.10"
+  "python_version": "3.10",
+  "description": ""
 }

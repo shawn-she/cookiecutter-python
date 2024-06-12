@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "{{cookiecutter.app_name}}"
 version = "0.0.1"
-description = ""
+description = "{{cookiecutter.description}}"
 authors = ["shawn-she"]
 readme = "README.md"
-homepage = "https://github.com/shawn-she/{{cookiecutter.repo_name}}"
+homepage = "https://github.com/shawn-she/"
 repository = "https://github.com/shawn-she/{{cookiecutter.repo_name}}"
 exclude = ["tests"]
 include = ["LICENSE"]
